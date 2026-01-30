@@ -1,0 +1,43 @@
+/* MOBILE VIEW */
+@media (max-width: 480px) {
+  .work-grid,
+  .stats,
+  .team-grid,
+  .pricing-container,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 5%;
+  }
+  
+  .hero-content {
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  .choose {
+    flex-direction: column;
+  }
+  
+  .about,
+  .skills {
+    flex-direction: column;
+  }
+  
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .subscribe-form {
+    flex-direction: column;
+  }
+  
+  .subscribe-form input,
+  .subscribe-form .btn {
+    width: 100%;
+  }
+}

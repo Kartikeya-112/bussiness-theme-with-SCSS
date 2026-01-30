@@ -1,0 +1,37 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f5f5f5;
+  padding: 40px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95em;
+  background: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  align-self: center;
+  padding: 12px 40px;
+  width: auto;
+}
+

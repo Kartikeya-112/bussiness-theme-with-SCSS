@@ -1,278 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-section {
-  padding: 60px 10%;
-}
-
-h2 {
-  font-size: 2em;
-  color: #2f3b47;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-h3 {
-  margin-bottom: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #ff6a00;
-}
-
-.btn {
-  background: #ff6a00;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #ff8c33;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid #ff6a00;
-  color: white;
-  padding: 10px 20px;
-}
-
-.btn-outline:hover {
-  background: #ff6a00;
-}
-
-.btn-play {
-  background: #ff6a00;
-  width: 45px;
-  height: 45px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px #ddd;
-  transition: 0.3s;
-  text-align: center;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px #ccc;
-}
-
-.card-icon {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  color: #ff6a00;
-}
-
-.card h3 {
-  color: black;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background: #f5f5f5;
-  padding: 40px;
-  border-radius: 5px;
-  max-width: 600px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
-  font-size: 0.95em;
-  background: white;
-}
-
-.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
-  color: #999;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #999;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form .btn {
-  align-self: center;
-  padding: 12px 40px;
-  width: auto;
-}
-
-/* HEADER/NAV */
-.header {
-  background: rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
-  padding: 15px 10%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.logo {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #ff6a00;
-  letter-spacing: 2px;
-}
-
-.logo img {
-  height: 45px;
-  width: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.nav {
-  display: flex;
-  gap: 35px;
-}
-
-.nav-link {
-  color: white;
-  font-size: 1em;
-  transition: 0.3s;
-  font-weight: 500;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #ff6a00;
-}
-
-/* HERO SECTION */
-.hero {
-  display: flex;
-  align-items: center;
-  color: white;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  background-image: url("images/hero.jpg");
-  margin-top: -80px;
-  padding-top: 80px;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(47, 59, 71, 0.15);
-  z-index: 1;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border-radius: 50%;
-  left: -250px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 0;
-  display: none;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border-radius: 50%;
-  right: -150px;
-  bottom: -100px;
-  z-index: 0;
-  display: none;
-}
-
-.hero-content {
-  flex: 0 0 50%;
-  max-width: 600px;
-  z-index: 10;
-  padding: 100px 10%;
-  position: relative;
-}
-
-.hero-label {
-  color: #ff6a00;
-  font-size: 1.1em;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 15px;
-}
-
-.hero-content h1 {
-  font-size: 3.5em;
-  margin-bottom: 25px;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.hero-content p {
-  font-size: 1em;
-  margin-bottom: 35px;
-  opacity: 1;
-  line-height: 1.8;
-  color: #fff;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
+@use '../base/variables';
 
 /* IMAGE STYLING */
 .hero-image img,
@@ -281,12 +7,12 @@ a {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-image {
   margin: 40px 0;
+  
 }
 
 .about-image {
@@ -300,8 +26,7 @@ a {
 .work img {
   width: 100%;
   height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -309,8 +34,7 @@ a {
   width: 100%;
   height: 250px;
   border-radius: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 auto 15px;
   display: block;
 }
@@ -323,9 +47,9 @@ a {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 
 /* WHY CHOOSE US */
 .choose {
@@ -347,6 +71,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
 
 /* ABOUT SECTION */
 .about {
@@ -414,6 +139,7 @@ a {
   background: #ff6a00;
   border-radius: 5px;
   transition: 0.3s;
+
   position: relative;
 }
 
@@ -424,6 +150,7 @@ a {
 .skills-image {
   flex: 1;
 }
+
 
 /* SERVICES SECTION */
 .services {
@@ -470,7 +197,7 @@ a {
 .service-icon {
   width: 120px;
   height: 120px;
-  background-image: url("images/services-icon.png");
+  background-image: url('images/services-icon.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -509,7 +236,7 @@ a {
 }
 
 .about-section .about-image::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -526,8 +253,7 @@ a {
   width: 100%;
   height: auto;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .about-section .about-text {
@@ -615,8 +341,7 @@ a {
 .work img {
   width: 100%;
   height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s;
 }
 
@@ -666,9 +391,11 @@ a {
   padding: 60px 10%;
 }
 
-.team-para {
-  text-align: center;
+
+.team-para{
+  text-align: center;;
 }
+
 
 .team-grid {
   display: grid;
@@ -684,15 +411,15 @@ a {
   width: 100%;
   height: 250px;
   border-radius: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 auto 15px;
   display: block;
 }
 
+
 /* REVIEWS SECTION */
 .reviews {
-  background-image: url("images/hero-02.jpg");
+  background-image: url('images/hero-02.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -702,7 +429,7 @@ a {
 }
 
 .reviews::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -766,8 +493,7 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .review h3 {
@@ -953,8 +679,7 @@ a {
 .blog-image-wrapper img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .blog-date {
@@ -1147,66 +872,3 @@ a {
   text-align: left;
 }
 
-/* MOBILE VIEW */
-@media (max-width: 480px) {
-  .work-grid,
-  .stats,
-  .team-grid,
-  .pricing-container,
-  .blog-grid {
-    grid-template-columns: 1fr;
-  }
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 100px 5%;
-  }
-  .hero-content {
-    padding: 0;
-    max-width: 100%;
-  }
-  .choose {
-    flex-direction: column;
-  }
-  .about,
-  .skills {
-    flex-direction: column;
-  }
-  .services-container {
-    grid-template-columns: 1fr;
-  }
-  .subscribe-form {
-    flex-direction: column;
-  }
-  .subscribe-form input,
-  .subscribe-form .btn {
-    width: 100%;
-  }
-}
-/* RESPONSIVENESS  */
-@media (max-width: 768px) {
-  .work-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .reviews-container {
-    grid-template-columns: 1fr;
-  }
-  .pricing-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .blog-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-  .footer-content {
-    grid-template-columns: 1fr;
-  }
-}/*# sourceMappingURL=main.css.map */
