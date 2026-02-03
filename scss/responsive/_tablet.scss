@@ -1,35 +1,299 @@
-/* RESPONSIVENESS  */
 @media (max-width: 768px) {
-  .work-grid {
-    grid-template-columns: repeat(2, 1fr);
+
+  .hero {
+    min-height: 100vh;
+    background-position: center right;
+    background-size: cover;
+    padding-top: 80px;
   }
-  
-  .stats {
-    grid-template-columns: repeat(2, 1fr);
+
+  .hero::before,
+  .hero::after {
+    display: none;
   }
-  
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .reviews-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .pricing-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .blog-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .footer-content {
-    grid-template-columns: 1fr;
+
+  .hero-overlay {
+    background: rgba(47, 59, 71, 0.35);
   }
 }
 
+@media (max-width: 768px) {
+
+  .hero-content {
+    max-width: 520px;
+    padding: 60px 6%;
+  }
+
+  .hero-label {
+    font-size: 1em;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4em;
+    line-height: 1.25;
+  }
+
+  .hero-content p {
+    font-size: 0.95em;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero-content {
+    max-width: 560px;
+    padding: 80px 8%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.9em;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-label {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+
+  .hero {
+    text-align: left;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero-content h1,
+  .hero-content p {
+    text-align: left;
+  }
+}
+@media (max-width: 1024px) {
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-label {
+    display: none;
+  }
+}
+
+/* Keep hero content LEFT like desktop */
+@media (max-width: 1024px) {
+
+  .hero {
+    text-align: left !important;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .hero-content h1,
+  .hero-content p {
+    text-align: left;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+}
+/* WHY CHOOSE US – RESPONSIVE ONLY */
+@media (max-width: 1024px) {
+
+  .choose {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  /* Left content stays left */
+  .choose-left {
+    flex: 1;
+  }
+
+  .choose-left h2 {
+    text-align: left;
+  }
+
+  /* Right cards become single column */
+  .choose-cards {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr; /* ONE BELOW ANOTHER */
+    gap: 25px;
+  }
+
+  .choose-cards .card {
+    padding: 30px 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  /* IMAGE ON TOP */
+  .about-section .about-image {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .about-section .about-image::before {
+    top: 12px;
+    left: 12px;
+  }
+
+  .about-section .about-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* TEXT CENTERED */
+  .about-section .about-text {
+    text-align: center;
+  }
+
+  .about-section .about-text h2 {
+    text-align: center;
+  }
+
+  .about-subheading {
+    text-align: center;
+  }
+
+  .about-section .about-text p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* BUTTON CENTER */
+  .about-section .btn {
+    margin: 0 auto;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  /* Center the last card */
+  .team-member:last-child {
+    grid-column: 1 / -1;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  /* Center the last blog card */
+  .blog-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .reviews-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: stretch;
+  }
+
+  .review {
+    padding: 30px 20px;
+  }
+
+  .review h3 {
+    font-size: 1em;
+  }
+
+  .review p {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+}
+/* BLOG – MOBILE (ONE COLUMN STACK) */
+@media (max-width: 576px) {
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .blog-card {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    display: flex;
+    flex-direction: row !important;
+    text-align: left !important;
+    min-height: 100vh;
+    background-position: center right;
+    padding-top: 80px;
+  }
+
+  /* Content stays on left */
+  .hero-content {
+    max-width: 520px;
+    padding: 60px 6%;
+    margin: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2em;
+    line-height: 1.25;
+  }
+
+  .hero-content p {
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+
+  /* Buttons stay inline (not stacked) */
+  .hero-buttons {
+    flex-direction: row !important;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}
