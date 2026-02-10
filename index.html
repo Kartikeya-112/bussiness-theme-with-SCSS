@@ -13,10 +13,19 @@
 <!-- HEADER/NAV -->
 <header class="header">
   <div class="nav-container">
+
     <div class="logo">
       <img src="images/logo.png" alt="SUE Logo">
     </div>
-    <nav class="nav">
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav" id="navMenu">
       <a href="#home" class="nav-link">Home</a>
       <a href="#about" class="nav-link">About</a>
       <a href="#services" class="nav-link">Services</a>
@@ -26,8 +35,10 @@
       <a href="#blog" class="nav-link">Blog</a>
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
+
   </div>
 </header>
+
 
 <!-- HERO SECTION -->
 <section class="hero" id="home" style="background-image: url('images/hero.jpg');">
@@ -48,9 +59,8 @@
   <div class="choose-left">
     <h2>Why Choose Us</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellat.</p><br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe perferendis illum incidunt pariatur nostrum, neque tempora accusamus possimus praesentium minus reprehenderit eius nulla expedita iste nihil a qui cumque nam!
-    Adipisci totam voluptatum possimus eum culpa consequuntur, nobis atque quae deleniti cumque eos ipsa dicta commodi quisquam quos. Soluta molestiae delectus debitis earum illum reprehenderit saepe non beatae iste enim.
-    Ullam modi commodi facilis reiciendis cum nisi eaque rerum, officiis vel quod qui, animi ipsam aperiam eveniet adipisci rem! Vel et aut, veritatis dolorem possimus animi aperiam enim quo odio?
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe perferendis illum 
+    ipsam aperiam eveniet adipisci rem! Vel et aut, veritatis dolorem possimus animi aperiam enim quo odio?
     Eaque cumque tempora velit rerum laudantium. Animi, inventore impedit, repellat illo laudantium aliquid at ad obcaecati tempora debitis quaerat accusamus ea ut eum totam dicta quo vitae consequatur architecto voluptate.</p>
     </div>
   <div class="choose-cards">
@@ -83,7 +93,7 @@
     <img src="images/about.png" alt="About Us">
   </div>
   <div class="about-text">
-    <h2>About Us</h2>
+    <h2>About Us</h2><br>
     <h3 class="about-subheading">Who We Are</h3>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque vel aut animi quam ducimus consequatur voluptas delectus, sapiente, explicabo nam quasil Corporis ipsum quae repellendus molestias a querat recusandae similique!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem suscipit ex quasi in iure dolorem cupiditate corrupts ducimus ipsa.</p>
@@ -96,7 +106,7 @@
   <h2>Our Skills</h2>
   <div class="skills-container">
     <div class="skill">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum provident hic tempore laboriosam animi impedit, delectus aliquam quos qui obcaecati vitae. Officia impedit itaque eius ipsum minima modi ullam inventore!</p><br><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum provident hic tempore laboriosam animi impedit, delectus aliquam quos qui obcaecati vitae. Officia impedit itaque eius ipsum minima modi ullam inventore!</p><br>
       <label>Web Design</label>
       <div class="bar">
         <span style="width: 95%"></span>
@@ -220,19 +230,63 @@
 <!-- TEAM SECTION -->
 <section class="team" id="team">
   <h2>Our Team</h2>
-  <p class =" team-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque similique exercitationem ullam ut .</p><br>
+  <p class="team-para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  </p><br>
+
   <div class="team-grid">
+
+    <!-- MEMBER 1 -->
     <div class="team-member">
       <img src="images/team/team-01.jpg" alt="Team Member 1">
+      <div class="team-overlay">
+        <div class="overlay-content">
+          <h3>Alex Smith</h3>
+          <p>Web Developer</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- MEMBER 2 -->
     <div class="team-member">
       <img src="images/team/team-02.jpg" alt="Team Member 2">
+      <div class="team-overlay">
+        <div class="overlay-content">
+          <h3>John Doe</h3>
+          <p>UI Designer</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- MEMBER 3 -->
     <div class="team-member">
       <img src="images/team/team-03.jpg" alt="Team Member 3">
+      <div class="team-overlay">
+        <div class="overlay-content">
+          <h3>Emma Watson</h3>
+          <p>Project Manager</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
+
 
 <!-- CUSTOMER REVIEW -->
 <section class="reviews" style="background-image: url('images/hero-02.jpg');">
@@ -418,3 +472,32 @@
 </section>
   </div>
   <script src ="script.js"></script>
+
+  <!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-logo">
+      <h1><img src="images/logo.png"</h1>
+      <p>Creative Template</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <p class="footer-copy">
+      © sqe Business theme, All Rights Reserved | Designed by
+      <span>GEC Designs</span>
+    </p>
+
+  </div>
+
+  <a href="#home" class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</footer>
